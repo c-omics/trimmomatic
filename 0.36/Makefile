@@ -1,6 +1,6 @@
 REGISTRY = bigr.bios.cf.ac.uk:4567
-TAG=0.7.15
-NAME = comics/bwa
+TAG=0.36
+NAME = comics/trimmomatic
 IMAGE = $(REGISTRY)/$(NAME)
 
 
