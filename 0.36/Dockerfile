@@ -17,6 +17,7 @@ ENV TRIMMOMATIC=$DEST/$VERSION/trimmomatic-$VERSION.jar
 ENV ADAPTERPATH=$DEST/$VERSION/adapters
 
 RUN yum install -y unzip java ; \
+    yum clean all ; \
     curl -L -o $APP_NAME-$VERSION.zip \
        http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/Trimmomatic-$VERSION.zip ; \
     unzip $APP_NAME-$VERSION.zip ; \
